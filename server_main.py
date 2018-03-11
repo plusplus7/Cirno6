@@ -20,8 +20,9 @@ def main(host="0.0.0.0", port=44321):
     s.connect()
 
     urls = [
-        (r'/article/(?P<link>[a-zA-Z0-9-_]+)', ArticleHandler, dict(db=s.get_conn())),
-        (r'/articleinfos/(?P<tag>[a-zA-Z1-9-_]+)', ArticleInfoHandler, dict(db=s.get_conn())),
+        (r'/indexpage', IndexHandler, dict(storage=s)),
+        (r'/article/(?P<link>[a-zA-Z0-9-_]+)', ArticleHandler, dict(storage=s)),
+        (r'/articleinfos/(?P<tag>[a-zA-Z1-9-_]+)', ArticleInfoHandler, dict(storage=s))
     ]
     app = tornado.web.Application(urls, **settings)
     app.listen(port, host)
