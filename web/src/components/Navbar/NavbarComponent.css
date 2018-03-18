@@ -1,0 +1,18 @@
+.Navbar {
+}
+
+.NavbarFont {
+    display: inline;
+    color: gray;
+    margin-right: 5px;
+}
+
+.NavbarFont a {
+    color: gray;
+    text-decoration: none;
+}
+
+.NavbarFont a:hover {
+    color: black;
+    text-decoration: none;
+}

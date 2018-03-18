@@ -1,0 +1,42 @@
+{
+  "name": "cirno5",
+  "version": "1.0.0",
+  "description": "blog system",
+  "main": "index.js",
+  "scripts": {
+    "server": "webpack-dev-server --open --config ./config/webpack.devbox.config.js",
+    "build": "set NODE_ENV=production && webpack --config ./webpack.prod.config.js --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cirno5"
+  ],
+  "author": "plusplus7",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.0.31",
+    "@types/react-bootstrap": "^0.31.9",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-redux": "^5.0.14",
+    "axios": "^0.17.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "react-dev-utils": "^4.2.1",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.6.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
